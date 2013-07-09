@@ -56,7 +56,9 @@ var restUrlFile = function(urlfile) {
 	if (result instanceof Error) {
 	    util.puts('Error: ' + result.message);
 	    this.retry(5000);
-	}
+	} //else {
+	    //util.puts(result);
+	//}    
     });
     return urlHtml;
 }
